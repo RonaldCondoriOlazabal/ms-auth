@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 name: auth-dev
 
 services:
   mysql-auth-dev:
+=======
+name: canchas-dev
+
+services:
+  mysql-canchas-dev:
+>>>>>>> ebcf0e0 (Microservicio auth)
     image: mysql:8.4
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
+<<<<<<< HEAD
       MYSQL_DATABASE: db_auth
     ports:
       - "3401:3306"
@@ -14,4 +22,14 @@ services:
 
 volumes:
   mysql_auth_dev_data:
+=======
+      MYSQL_DATABASE: db_canchas
+    ports:
+      - "3402:3306"
+    volumes:
+      - mysql_canchas_dev_data:/var/lib/mysql
+
+volumes:
+  mysql_canchas_dev_data:
+>>>>>>> ebcf0e0 (Microservicio auth)
 

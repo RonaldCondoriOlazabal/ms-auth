@@ -1,8 +1,15 @@
 spring:
   application:
+<<<<<<< HEAD
     name: auth
   profiles:
     active: dev
+=======
+    name: canchas
+  profiles:
+    active: dev
+
+>>>>>>> ebcf0e0 (Microservicio auth)
   config:
     import: "optional:configserver:${CONFIG_SERVER_URL:http://localhost:7071}"
 
